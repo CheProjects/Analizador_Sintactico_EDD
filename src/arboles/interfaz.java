@@ -162,11 +162,14 @@ public class interfaz extends JFrame
  
    public void generar(String archivo){
      try {
-       String dotPath = "C:\\Program Files (x86)\\Graphviz2.30\\bin\\dot.exe";
+	//Path donde se encuentra instalado Graphviz '\\Graphviz2.30\\bin\\dot.exe'
+       String dotPath = "";
+ 	
+	//Path donde se almacenara el archivo que graficara Graphviz.
+       String fileInputPath = "" + archivo + ".txt";
  
-       String fileInputPath = "E:\\Jefferson\\Universidad\\Ciclo 8\\Analizador_Sintactico\\" + archivo + ".txt";
- 
-       String fileOutputPath = "E:\\Jefferson\\Universidad\\Ciclo 8\\Analizador_Sintactico\\" + archivo + ".jpg";
+	//Path donde se almacenara el archivo graficado Graphviz.
+       String fileOutputPath = "" + archivo + ".jpg";
  
        String tParam = "-Tjpg";
  
